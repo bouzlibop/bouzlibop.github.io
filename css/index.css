@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'Old Standard TT';
+  src: url('../fonts/OldStandardTT/OldStandard-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: url('../fonts/OpenSans/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSansLight';
+  src: url('../fonts/OpenSans/OpenSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSansExtraBold';
+  src: url('../fonts/OpenSans/OpenSans-ExtraBold.ttf') format('truetype');
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  background-color: #3498db;
+  font-family: 'OpenSansRegular', sans-serif;
+  color: #fff;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+ text-decoration: none;
+ color: #f1c40f;
+}
+
+.navbar a:hover {
+  color: #e67e22;
+}
+
+.tcon {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  z-index: 100;
+}
+
+.navbar {
+  top: 10px;
+  font-family: 'OpenSansExtraBold', sans-serif;
+  position: relative;
+  overflow: hidden;
+  height: 40px;
+  width: 0px;
+  background-color: black;
+  opacity: 0.9;
+  -webkit-transition: width 0.3s ease-out;
+  transition: width 0.3s ease-out;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 40px;       /* the same as your div height */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 200%;
+}
+
+blockquote {
+  position: relative;
+  top: 20%;
+  max-width: 60%;
+  margin: 0 auto;
+  font-size: 200%;
+}
+
+blockquote footer {
+  margin-top: 1.8em;
+  font-size: 60%;
+  text-align: right;
+}
