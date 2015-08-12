@@ -40,7 +40,7 @@
   width: 40px;
   border-radius: 2.85714px;
   transition: 0.3s;
-  background: white;
+  background: black;
   position: relative;
 }
 .tcon-menu__lines::before, .tcon-menu__lines::after {
@@ -49,7 +49,7 @@
   width: 40px;
   border-radius: 2.85714px;
   transition: 0.3s;
-  background: white;
+  background: black;
   content: '';
   position: absolute;
   left: 0;
@@ -83,6 +83,7 @@
 }
 .tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines::before,
 .tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines::after {
+  background: white;
   top: 0;
   transition: top .3s ease, -webkit-transform .3s .5s ease;
   transition: top .3s ease, transform .3s .5s ease;

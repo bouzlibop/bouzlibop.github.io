@@ -16,21 +16,27 @@
   </head>
 
   <body>
+
     <button type='button' class='tcon tcon-menu--xbutterfly' aria-label='toggle menu'>
       <span class='tcon-menu__lines' aria-hidden='true'></span>
       <span class='tcon-visuallyhidden'>toggle menu</span>
     </button>
 
     <nav class="navbar">
-      <span>Hello, I'm Adrian.</span>
-      <li><a href="#">CV</a></li>
-      <li><a href="#">Blog</a></li>
+      <div class="navbarContainer">
+          <span class="greeting">Hello, I'm Adrian.</span>
+          <span class="menu">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+          </span>
+      </div>
     </nav>
 
-    <blockquote>
-      &ldquo;It seems that perfection is attained not when there is nothing more to add, but when there is nothing more to remove.&rdquo;
-      <footer>&mdash; "Terre de Hommes", Antoine de Saint Exupéry</footer>
-    </blockquote>
+    <div class="mainContainer">
+        <blockquote>&ldquo;It seems that perfection is attained not when there is nothing more to add, but when there is nothing more to remove.&rdquo;
+          <footer>&mdash; "Terre de Hommes", Antoine de Saint Exupéry</footer>
+        </blockquote>
+    </div>
 
     <script src='js/transformicons.js'></script>
     <script src='js/index.js'></script>
