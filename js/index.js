@@ -1,17 +1,29 @@
-function toogle(element) {
-  if (element.style.opacity === "" || element.style.opacity === '0') {
-    element.style.opacity = '1';
-  } else {
-    element.style.opacity = '0';
-  }
-}
+/**
+ * Present all job titles in one, specific DOM element.
+ */
+var jobTitleCarousell = function () {
+  var jobTitleElement = document.querySelector('.job-title');
+  var jobTitles = [
+    'JavaScript',
+    'Web',
+    'Front-end',
+    'Back-end',
+    'Python'
+  ];
+  var speed = 2 * 1000;
 
-document.addEventListener("DOMContentLoaded", function() {
-  transformicons.add('.tcon');
+  var index = 1;
+  var limit = jobTitles.length;
+  setInterval(function() {
+    if (index >= limit) index = 0;
+    jobTitleElement.textContent = jobTitles[index];
+    index++;
+  }, speed);
+};
 
-  var menuButton = document.getElementsByClassName('tcon')[0];
-  var navbar = document.getElementsByClassName('navbar')[0];
-  menuButton.addEventListener('click', function (event) {
-    toogle(navbar);
-  });
-});
+/**
+ * Register jobTitleCarousell on DOMContentLoaded.
+ *
+ * See: https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded
+ */
+document.addEventListener('DOMContentLoaded', jobTitleCarousell);

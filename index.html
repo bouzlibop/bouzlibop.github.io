@@ -1,44 +1,57 @@
 <!DOCTYPE html>
+<!--
+   __ ^ __
+__\_ / \ _/__
+\___\\ //___/
+/___// \\__\
+  /__\ /__\
+      v
+Copyright (c) 2015 Adrian Baran
+-->
 <html>
+
   <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-    <title></title>
+    <title>Adrian Baran</title>
 
     <link rel='stylesheet' type='text/css' href='css/reset.css'>
-    <link rel='stylesheet' type='text/css' href='css/transformicons.css'>
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
     <link rel='stylesheet' type='text/css' href='css/index.css'>
 
-    <meta name='author' content='Adrian Baran <bouzlibop@gmail.com>'>
-    <meta name='description' content=''>
-    <meta name=keywords' content='homepage'>
+    <meta name='author' content='Adrian Baran <adrian.baran@hotmail.com>'>
+    <meta name='description' content='Adrian Baran Personal Web Page.'>
+    <meta name='keywords' content='homepage'>
   </head>
 
   <body>
+    <div class="container">
 
-    <button type='button' class='tcon tcon-menu--xbutterfly' aria-label='toggle menu'>
-      <span class='tcon-menu__lines' aria-hidden='true'></span>
-      <span class='tcon-visuallyhidden'>toggle menu</span>
-    </button>
-
-    <nav class="navbar">
-      <div class="navbarContainer">
-          <span class="greeting">Hello, I'm Adrian.</span>
-          <span class="menu">
-              <li><a href="#">About</a></li>
-              <li><a href="/about.html">Blog</a></li>
-          </span>
+      <div class="contact">
+        <a class="l1" href="mailto:adrian.baran@hotmail.com"><i class="fa fa-envelope"></i></a>
+        <a class="l2" href="https://github.com/bouzlibop"><i class="fa fa-github"></i></a>
+        <a class="l3" href="https://www.linkedin.com/in/baranadrian"><i class="fa fa-linkedin"></i></a>
       </div>
-    </nav>
 
-    <div class="mainContainer">
-        <blockquote>&ldquo;It seems that perfection is attained not when there is nothing more to add, but when there is nothing more to remove.&rdquo;
+      <div class="brief">
+        <h1>Adrian <span class="imp">Baran</span></h1>
+        <footer>
+          <span class="job-title imp">JavaScript</span>
+          <span>Developer, who <i class="fa fa-code"></i> with <i class="fa fa-heart"></i></span>
+        </footer>
+      </div>
+
+      <div class="motto">
+        <blockquote>
+          &ldquo;It seems that perfection is attained not when there is nothing more to
+          <span class="imp">add</span>, but when there is nothing more to <span class="imp">remove</span>.&rdquo;
           <footer>&mdash; "Terre de Hommes", Antoine de Saint Exupéry</footer>
         </blockquote>
+      </div>
     </div>
 
-    <script src='js/transformicons.js'></script>
     <script src='js/index.js'></script>
   </body>
+
 </html>

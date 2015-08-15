@@ -8,5 +8,8 @@
   "description": "bouzlibop's homepage",
   "keywords": [
     "homepage"
-  ]
+  ],
+  "dependencies": {
+    "font-awesome": "~4.4.0"
+  }
 }

@@ -1,133 +1,114 @@
-@font-face {
-  font-family: 'Old Standard TT';
-  src: url("../fonts/OldStandardTT/OldStandard-Regular.ttf") format("truetype"); }
-@font-face {
-  font-family: 'OpenSansRegular';
-  src: url("../fonts/OpenSans/OpenSans-Regular.ttf") format("truetype"); }
+/**
+ * Fonts definitions.
+ */
 @font-face {
   font-family: 'OpenSansLight';
-  src: url("../fonts/OpenSans/OpenSans-Light.ttf") format("truetype"); }
+  src: url("../fonts/OpenSans/OpenSans-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: url("../fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'OpenSansSemibold';
+  src: url("../fonts/OpenSans/OpenSans-Semibold.ttf") format("truetype");
+}
 @font-face {
   font-family: 'OpenSansExtraBold';
-  src: url("../fonts/OpenSans/OpenSans-ExtraBold.ttf") format("truetype"); }
+  src: url("../fonts/OpenSans/OpenSans-ExtraBold.ttf") format("truetype");
+}
+
+/**
+ * Page layout.
+ */
 html,
 body {
   height: 100%;
-  width: 100%; }
-
+  width: 100%;
+}
 body {
-  background-color: #ecf0f1; }
+  background-color: white;
+  font-family: "OpenSansRegular", sans-serif;
+}
 
-@media screen and (min-width: 510px) and (max-width: 1099px) {
-  .navbar {
-    background-color: #2c3e50;
-    height: 84px;
-    font-family: "OpenSansExtraBold", sans-serif;
-    font-size: 200%;
-    opacity: 0;
-    position: fixed;
-    top: 10px;
-    transition: all 0.3s ease-out;
-    width: 100%;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none; }
+.container {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0 auto;
+  width: 620px;
+}
 
-  .navbarContainer {
-    height: 50%;
-    margin: 0 auto;
-    max-width: 976px;
-    min-width: 510px;
-    position: relative;
-    top: 50%; } }
-@media screen and (min-width: 510px) and (min-width: 1100px) {
-  .navbar {
-    background-color: #2c3e50;
-    height: 42px;
-    font-family: "OpenSansExtraBold", sans-serif;
-    font-size: 200%;
-    opacity: 0;
-    position: fixed;
-    top: 10px;
-    transition: all 0.3s ease-out;
-    width: 100%;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none; }
+.brief {
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+.brief h1 {
+  font-family: "OpenSansExtraBold";
+  font-size: 350%;
+}
+.brief footer {
+  margin-top: 20px;
+  font-size: 110%;
+}
+.brief footer .job-title {
+  box-sizing: border-box;
+  display: inline-block;
+  font-family: 'OpenSansSemibold', sans-serif;
+  text-align: left;
+  width: 85px;
+}
+.brief .fa-heart {
+  color: #e74c3c;
+  font-size: 130%;
+}
+.brief .fa-code {
+  color: #2c3e50;
+  font-size: 150%;
+}
 
-  .navbarContainer {
-    height: 100%;
-    margin: 0 auto;
-    max-width: 976px;
-    min-width: 510px;
-    position: relative; } }
-@media screen and (min-width: 510px) {
-  .navbarContainer .greeting {
-    box-sizing: border-box;
-    color: white;
-    cursor: default;
-    height: 42px;
-    left: 0;
-    line-height: 42px;
-    width: 295px;
-    padding: 0 0 0 10px;
-    position: absolute; }
+.contact {
+  box-sizing: border-box;
+  font-size: 250%;
+  margin-top: 20px;
+}
+.contact a {
+  box-sizing: border-box;
+  color: #2c3e50;
+  display: inline-block;
+  text-decoration: none;
+}
+.contact a:hover {
+  color: #95a5a6;
+}
+.contact .l1 {
+  text-align: left;
+  width: 60px;
+}
+.contact .l2 {
+  text-align: center;
+  width: 56px;
+}
+.contact .l3 {
+  text-align: right;
+  width: 54px;
+}
 
-  .navbar .menu {
-    box-sizing: border-box;
-    height: 100%;
-    margin-right: 10px;
-    position: absolute;
-    right: 0;
-    width: 200px; }
+.motto {
+  box-sizing: border-box;
+  margin-top: 150px;
+}
+.motto blockquote {
+  text-align: justify;
+  font-size: 120%;
+}
+.motto blockquote footer {
+  margin-top: 1em;
+  text-align: right;
+}
 
-  .navbar .menu li {
-    display: inline-block;
-    float: right;
-    height: 100%;
-    margin-right: 10px;
-    line-height: 42px; }
-
-  .navbar .menu a {
-    text-decoration: none;
-    color: #f1c40f; }
-
-  .navbar .menu a:hover {
-    color: #d35400; } }
-@media screen and (min-width: 510px) and (max-width: 1099px) {
-  .mainContainer {
-    box-sizing: border-box;
-    margin: 0 auto;
-    min-height: 545px;
-    width: 976px;
-    position: relative;
-    top: 104px; } }
-@media screen and (min-width: 510px) and (min-width: 1100px) {
-  .mainContainer {
-    box-sizing: border-box;
-    margin: 0 auto;
-    min-height: 545px;
-    width: 976px;
-    position: relative;
-    top: 64px; } }
-@media screen and (min-width: 510px) {
-  blockquote {
-    background-color: #16a085;
-    font-family: "OpenSansRegular", sans-serif;
-    font-size: 200%;
-    padding: 20px;
-    color: white; }
-
-  blockquote > footer {
-    margin-top: 0.8em;
-    text-align: right; }
-
-  .tcon {
-    left: 0px;
-    position: fixed;
-    top: 13px;
-    z-index: 999; } }
-
-/*# sourceMappingURL=index.css.map */
+/**
+ * Extra
+ */
+.imp {
+  color: #3498db;
+}
