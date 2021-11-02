@@ -7,8 +7,7 @@ var jobTitleCarousell = function () {
     'JavaScript',
     'Web',
     'Front-end',
-    'Back-end',
-    'Python'
+    'ReactJS',
   ];
   var speed = 2 * 1000;
 
